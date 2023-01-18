@@ -3,6 +3,7 @@ header {
 	background-image: url('img/pokemon.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: contain;
 	height: 200px;
 }
 
@@ -10,6 +11,7 @@ header {
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-image: url('https://cachorrosfumantes.files.wordpress.com/2016/09/pokemonnnn.jpg');
+	background-size: contain;
 	/*height: 550px;*/
 }
 
@@ -38,4 +40,23 @@ p{
 
 #pokemon {
 	padding : 10px;
+}
+
+
+/* max-width 700 */
+@media (max-width: 700px){
+	header{
+		height:5em;
+	}
+	h1,h2 { font-size : 1em;}
+	#pokemon { border : none!IMPORTANT;}
+	.btn {width : 45%;
+		  margin-left: 28%;}
+	.form-group{ width:50%;
+				 margin-left:0;
+				 left:0;}
+	#pokemon_search {
+		margin-left:0;
+		left:0;
+	}
 }
