@@ -1,12 +1,29 @@
 header {
 
 	background-image: url('img/pokemon.jpg');
-	background-position:center;
-	background-repeat:no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
 	height: 200px;
 }
 
+#container {
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-image: url('https://cachorrosfumantes.files.wordpress.com/2016/09/pokemonnnn.jpg');
+	/*height: 550px;*/
+}
+
+#main {
+	background-color: white;
+	opacity :0.9;
+	margin-top : 50px;
+}
+
+#resultat {
+	margin: 50px;
+}
+
 h1 {
-	text-align:center;
-	text-transform:uppercase;
+	text-align: center;
+	text-transform: uppercase;
 }
