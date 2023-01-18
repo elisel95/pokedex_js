@@ -23,7 +23,19 @@ header {
 	margin: 50px;
 }
 
-h1 {
+h1,h2 {
 	text-align: center;
 	text-transform: uppercase;
+}
+
+p{
+	text-align:center;
+}
+
+.img_pokemon{
+	width:80%;
+}
+
+#pokemon {
+	padding : 10px;
 }
