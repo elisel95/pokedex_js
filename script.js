@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	 
 	 //masque par défaut le tableau
 	 $("#tab").hide();
 	 
@@ -35,29 +34,27 @@ $(document).ready(function(){
 	  }; //fin de la boucle.
 	
   
-  /*$(".btn").click(function(){
+  //recherche + affichage resultat 
   
-  $(".resultat").show();
+  $(".btn").click(function(){
+  	//changement de css pour #resultat
+	$("#main").css("opacity","1");
+  
+  //masque le tableau
+  $(".tab").hide();
   
     let search = $("#pokemon_search").val();
 
- 
 
     $.ajax({
       url:"https://pokeapi.co/api/v2/pokemon/"+search+"",
       type:"GET",
       success: function(result){
-      
-      let i = 0
-      while (i < result.types.length) {
-            let type = result.types[i].type.name;
-      			$("#types").append("<li>"+type+"</li>");
-            i++
-            console.log(type);
-            };
-        
-        $('#resultat').html("<h2 class='align-self-center'>"+result.name+"</h2><img class='' alt='illustration "+result.name+"'src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+result.id+".png'></img>");
-        $("#caract").html("<p>Weight : "+result.weight+"  Height : "+result.height+"</p>")
+			
+        $('#resultat').html("<div class='col-4'></div><div id='pokemon' class='col-4 text-center d-block mx-auto'><h2 class=''>"+result.name+"</h2><img class='img_pokemon text-center d-block mx-auto' alt='illustration "+result.name+"'src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+result.id+".png'></img><hr><p>Type principal : "+result.types[0].type.name+"</p><p>Poids : "+result.weight+"</p><p>Taille : "+result.height+"</p></div><div class='col-4'></div>");
+       	$("#pokemon").css( "border", "black 0.5px solid" );
+		
+
       },
       error : function(error) {
         console.log(error);
@@ -65,6 +62,5 @@ $(document).ready(function(){
     });
 
   });
-  */
   
 });
